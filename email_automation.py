@@ -181,7 +181,7 @@ outer_flag = True
 while outer_flag:
     # inp = int(input('1. Start application: \n2. Exit application\nselect option: '))
     # if inp == 1:
-    print("\n------------------------------- \nPlease choose an ISP option from \n1. Gmail \n2. Yahoo \n3. Outlook \n4. Exit application")
+    print("\n------------------------------- \nPlease choose an ISP option from \n1. Gmail \n2. Yahoo \n2. Outlook \n4. Exit application")
     isp = int(input('\nEnter ISP number: '))
     print("-------------------------------\n")
     
@@ -359,8 +359,7 @@ while outer_flag:
             verify_btn.click()
 
         except Exception as e:
-            # print("Authentication not required or an error occurred:", e)
-            pass
+            print("Authentication not required or an error occurred:", e)
 
         # Menu and action loop
         inner_flag = True
@@ -400,7 +399,6 @@ while outer_flag:
             elif user_input == 4:
                 print('Application closed')
                 inner_flag = False
-                outer_flag = False
                 driver.quit()
 
             else:
